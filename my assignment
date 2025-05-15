@@ -1,0 +1,111 @@
+# congenial-potato
+coding assignment2
+repo-my assignment/
+│
+├── module2-solution/
+│   ├── index.html
+│   └── css/
+│       └── styles.css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 2 Assignment</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Our Menu</h1>
+
+  <div class="section-container">
+    <section class="menu-section chicken">
+      <div class="section-title">Chicken</div>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </section>
+    <section class="menu-section beef">
+      <div class="section-title">Beef</div>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </section>
+    <section class="menu-section sushi">
+      <div class="section-title">Sushi</div>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </section>
+  </div>
+</body>
+</html>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-container {
+  width: 100%;
+}
+
+.menu-section {
+  border: 1px solid black;
+  padding: 20px;
+  position: relative;
+  background-color: #f2f2f2;
+  margin: 10px;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ffcc00;
+  border: 1px solid black;
+  padding: 5px 10px;
+  font-size: 1.25em;
+}
+
+.chicken .section-title {
+  background-color: #ff9999;
+}
+
+.beef .section-title {
+  background-color: #99ccff;
+}
+
+.sushi .section-title {
+  background-color: #ccffcc;
+}
+
+/* Mobile (default) */
+.menu-section {
+  width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-section {
+    float: left;
+    width: 48%;
+    margin: 1%;
+  }
+
+  .menu-section:nth-child(3) {
+    width: 98%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .menu-section {
+    float: left;
+    width: 31.3%;
+    margin: 1%;
+  }
+}
